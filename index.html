@@ -13,7 +13,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'gradient-start': '#FF8938',
+                'gradient-end' : '#F00' ,
               }
             }
           }
@@ -28,14 +29,18 @@
 </head>
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-32">
+            <div class="flex items-center justify-between flex-col lg:flex-row">
              
               <div>
                 <h1 class="text-7xl font-extrabold">It's good <br>
                     tea time at The <br> Tea House</h1>
                 <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary">Explore More</button>
+                <button class="btn text-white bg-gradient-to-r from-[#FF8938] to-[#F00]">Explore More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M4.5 19.7788L19.5 4.77881M19.5 4.77881H8.25M19.5 4.77881V16.0288" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
               </div>
               <div>
                 <img src="tea-house-resources-main/images/banner.png" class=" " />
@@ -122,22 +127,106 @@
         </section>
         <!-- client -->
         <section class="my-28 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
-            <div class="space-y-5">
+            <div class="flex items-center">
+               <div class="space-y-5 pr-40">
                 <h3 class="text-5xl font-extrabold text-white">Meet Our Super <br> Clients</h3>
-            <p class="text-base font-medium text-[#F4F4F4]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-            <button class="btn btn-outline">Show All</button>
+                <p class="text-base font-medium text-[#F4F4F4]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                <button class="btn btn-outline">Show All</button>
+               </div>
             </div>
 
-            <div class="relative p-11 rounded-lg bg-white">
-                <img class="absolute -top-5 -left-6" src="tea-house-resources-main/images/client.png" alt="">
+            <div class="relative">
+              <div class="relative opacity-50 z-10 mb-16 p-11 rounded-lg bg-white">
+                <img class="absolute  -top-5 -left-6 border-4 border-white rounded-full bg-white" src="tea-house-resources-main/images/client.png" alt="">
                 <p class="font-normal text-base text-[#777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
                 <h4 class="text-base font-bold text-[#1C1C1C] mt-5">IIham Yuda</h4>
                 <p class="font-medium text-[#777]">Businessman</p>
+                <div class="flex justify-end">
+                  <img class="" src="tea-house-resources-main/images/circles.png" alt="">
+                </div>
             </div>
+            <div class="absolute top-40 z-20 lg:-left-32 lg:w-[430px] p-11 rounded-lg bg-white">
+                <img class="absolute -top-5 -left-6 border-4 border-white rounded-full bg-white" src="tea-house-resources-main/images/client.png" alt="">
+                <p class="font-normal text-base text-[#777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h4 class="text-base font-bold text-[#1C1C1C] mt-5">IIham Yuda</h4>
+                <p class="font-medium text-[#777]">Businessman</p>
+                <div class="flex justify-end">
+                  <img class="" src="tea-house-resources-main/images/circles.png" alt="">
+                </div>
+            </div>
+            <div class="relative opacity-50 z-10 p-11 rounded-lg bg-white">
+                <img class="absolute -top-5 -left-6 border-4 border-white rounded-full bg-white" src="tea-house-resources-main/images/client.png" alt="">
+                <p class="font-normal text-base text-[#777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h4 class="text-base font-bold text-[#1C1C1C] mt-5">IIham Yuda</h4>
+                <p class="font-medium text-[#777]">Businessman</p>
+                <div class="flex justify-end">
+                  <img class="" src="tea-house-resources-main/images/circles.png" alt="">
+                </div>
+            </div>
+            </div>
+           
         </section>
+        <!-- news -->
+            <section>
+             <div class="">
+              <h3 class="text-center text-[#1C1C1C] text-5xl font-extrabold">News & Events</h3>
+              <p class="font-medium text-center text-[#777]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quas, eligendi perferendis enim voluptas architecto eum dolorum sunt numquam eveniet.</p>
+             </div>
+             
+            </section>
     </main>
-    <footer>
-
+    <!-- footer -->
+    <footer class="p-4 lg:px-52 bg-base-200 text-base-content">
+      <div class="flex my-20 justify-between">
+        <div>
+          <img src="tea-house-resources-main/images/cup.png" alt="">
+        </div>
+        <div class="flex gap-5">
+          <p>Ready to get started</p>
+          <button class="btn btn-warning bg-gradient-to-r from-[#FF8938] to-[#F00]">Warning</button>
+        </div>
+      </div>
+     <div class="footer ">
+      
+      <nav>
+        <header class="footer-title">Services</header> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Company</header> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Legal</header> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav> 
+      <form>
+        <header class="footer-title">Newsletter</header> 
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label> 
+          <div class="join">
+            <input type="text" placeholder="username@site.com" class="py-4 bg-transparent border-b-2 border-black outline-none" /> 
+            <button class="btn  top-0 right-0 rounded-full bg-gradient-to-r from-[#FF8938] to-[#F00]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M6.91406 3.92432L12.1315 9.14171L6.91406 14.3591" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></button>
+          </div>
+        </fieldset>
+      </form>
+     </div>
+      <div class="mt-10 text-center">
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+      </div>
     </footer>
+
 </body>
 </html>
